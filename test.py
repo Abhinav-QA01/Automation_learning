@@ -1,8 +1,6 @@
-from selenium import webdriver
-import time
+import random
 
-driver = webdriver.Chrome()
+arr = [10, 20, 30, 40, 50]
+random_element = random.choice(arr)
 
-driver.get("http://selenium.dev")
-driver.maximize_window()
-time.sleep(10)
+print(random_element)

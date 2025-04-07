@@ -18,7 +18,7 @@ rows = len(driver.find_elements(By.XPATH, '//*[@id="countries"]/tbody/tr'))
 # Loop through each row and check the checkbox
 for n in range(2, rows + 1):  # Assuming row index starts from 1
     checkbox_xpath = f'//*[@id="countries"]/tbody/tr[{n}]/td[1]/input'
-    checkbox = driver.find_element(By.XPATH, checkbox_xpath)
+    checkbox = driver.find_element(By.XPATH, checkbox_xpath)    
     
     # Check the checkbox only if it's not already selected
     if not checkbox.is_selected():

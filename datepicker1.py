@@ -13,7 +13,7 @@ browser.maximize_window()
 
 time.sleep(2)
 framelo = browser.find_element(By.XPATH, '//*[@id="post-2661"]/div[2]/div/div/div[1]/p/iframe')
-browser.switch_to.frame(framelo)
+browser.switch_to.frame(framelo) 
 time.sleep(3)
 browser.find_element(By.XPATH, "//input[@id='datepicker']").click()
 
